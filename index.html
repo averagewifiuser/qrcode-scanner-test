@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #reader {
+            width: 300px;
+            height: 300px;
+            border: 2px solid #007bff;
+            margin-bottom: 20px;
+        }
+        #result {
+            font-size: 20px;
+            color: #007bff;
+        }
+        #control {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>QR Code Scanner</h1>
+    <div id="reader"></div>
+    <div id="result">Scan a QR code</div>
+    <script src="./html5-qrcode.min.js"></script>
+    
+    <h1>QR Code Scanner</h1>
+    <video id="preview"></video>
+    <div id="result">Scan a QR code</div>
+    <div id="control">
+        <button id="startButton">Start Scanning</button>
+        <button id="stopButton">Stop Scanning</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

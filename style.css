@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#preview {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+#canvas {
+    display: none;
+}
